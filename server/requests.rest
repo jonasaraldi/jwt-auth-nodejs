@@ -1,0 +1,30 @@
+###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "username": "Jonas"
+}
+
+###
+
+POST http://localhost:3001/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9uYXMiLCJpYXQiOjE1ODQ4MjgzMDR9.SMVzhRyl5ZLsUD2m_X4koOd2Q37V0j26XUCJHJSXFos"
+}
+
+###
+GET http://localhost:3000/api/v1/post
+
+###
+POST http://localhost:3000/api/v1/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9uYXMiLCJpYXQiOjE1ODQ4MjgzODcsImV4cCI6MTU4NDgyODQxN30.SN48ddGJt7lwWKEABPUevP9QLeaW4Qlub6q-zCXAGPg
+
+{
+    "title": "Autenticação com JWT",
+    "author": "John Doe",
+    "text": "Vamos criar uma autenticação com JWT"
+}
