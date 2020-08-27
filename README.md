@@ -1,5 +1,5 @@
-# cms-auth
-A CMS created with Node.js, JWT and MongoDB
+# jwt-auth-nodejs 
+Solution developed with Node.js, JWT and MongoDB
 
 ## Setup
 
